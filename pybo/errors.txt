@@ -1,0 +1,8 @@
+1. flask db migrate dose not work
+: 데이터베이스의 head가 A-B-C-D(head)   처럼 동시에 2가지 head가 존재하는 경우
+                          -E-F(head)
+: https://www.arundhaj.com/blog/multiple-head-revisions-present-error-flask-migrate.html
+: 위 링크 참조
+
+1-2. having multiple heads and bases
+

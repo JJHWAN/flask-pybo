@@ -1,0 +1,17 @@
+-3-16
+1. 답변 페이징과 정렬 기능
+: question_list에 있던 페이징과 recommend에 대한 정렬 기능을 참고했다.
+1) question_list.html에 있던 page-link에 대한 javascript 함수를 question_detail.html에
+추가했고,
+2) searchForm를 page에 대해 추가,
+3) question_views.py의 detail 함수를 sub query를 이용하여 answer_list와 page 를 넘겨주도록 수정했다.
+
+
+2. 카테고리 기능
+- 현재 파이보는 질문과 답변 게시판으로만 구성되어 있지만 여기에 '강좌' 나 '자유게시판' 카테고리를 추가하는 것이 목표.
+- Question 모델에 카테고리 개념을 적용해야 한다.
+
+:How? -> question model에 카테고리 추가(X)
+1) 새로운 DB 모델 Category 클래스 생성
+2) Question 모델과 Category 모델관 관계 생성
+3) 이를 기반으로 question_views._list함수를 수정
